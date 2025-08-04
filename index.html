@@ -3,26 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Abibatou Ndiaye</title>
+  <title>Abibatou Ndiaye - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Abibatou Ndiaye</h1>
-    <p>Étudiante en Informatique | Passionnée par la data, l’IA et la cybersécurité</p>
+    <nav>
+      <h1>Abibatou Ndiaye</h1>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
+  <section id="about" class="section">
+    <h2>À propos</h2>
+    <p>Curieuse, rigoureuse et toujours prête à relever de nouveaux défis, je m’intéresse aux multiples domaines de l’informatique, avec une affinité particulière pour les projets concrets et innovants. Après l’obtention de ma licence en informatique à l’Université Côte d’Azur, je m’apprête à intégrer un Master 1 en septembre 2025.
+    <br><br>Actuellement en recherche d’alternance, je souhaite mettre mes compétences au service d’une équipe dynamique tout en continuant à progresser techniquement. J’accorde une grande importance à la qualité du code, à l’apprentissage continu et à la capacité à travailler en autonomie comme en collaboration.</p>
+  </section>
+
+  <section id="projects" class="section">
     <h2>Projets</h2>
-    <ul>
-      <li><strong>Kidsafety</strong> – Application de controle parental </li>
-      <li><strong>2Days Game</strong> – </li>
-      <li><strong>miniC</strong> – Projet de compilation (analyseur syntaxique)</li>
-    </ul>
+    <!-- Exemples de cartes projet -->
+    <div class="project-card">
+      <h3>Kidsafety (Android)</h3>
+      <p>Application mobile de suivi parental : géolocalisation, verrouillage d'applications, alertes, accès aux messages et contacts, gestion multi-profils.</p>
+    </div>
+    <div class="project-card">
+      <h3>2Days Game</h3>
+      <p>Jeu de stratégie au tour par tour développé en Java avec animations, interface interactive et logique métier.</p>
+    </div>
+    <div class="project-card">
+      <h3>miniC Compiler</h3>
+      <p>Compilateur éducatif en C avec analyse lexicale, syntaxique, sémantique et génération d'AST + fichier DOT.</p>
+    </div>
+  </section>
+
+  <section id="cv" class="section">
+    <h2>Mon CV</h2>
+    <a href="CV_AbibatouNdiaye.pdf" download class="btn">Télécharger le CV</a>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Vous pouvez me retrouver sur :<br>
+      <a href="https://github.com/abiibatouu" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/abibatou" target="_blank">LinkedIn</a>
+    </p>
   </section>
 
   <footer>
-    <p>© 2025 Abibatou Ndiaye</p>
+    <p>&copy; 2025 Abibatou Ndiaye - Tous droits réservés.</p>
   </footer>
 </body>
 </html>
