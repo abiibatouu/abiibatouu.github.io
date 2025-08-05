@@ -1,61 +1,160 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abibatou Ndiaye - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
     <nav>
       <h1>Abibatou Ndiaye</h1>
       <ul>
+        <li><a href="#home">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
         <li><a href="#projects">Projets</a></li>
+        <li><a href="#gallery">Galerie</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about" class="section">
+  <section id="home" class="section hero">
+    <div class="hero-content">
+      <h2>Bonjour, je suis Abibatou Ndiaye</h2>
+      <p>Étudiante en Master 1 Informatique à l’Université Côte d’Azur</p>
+      <p>Passionnée par l’intelligence artificielle, la cybersécurité et le développement logiciel</p>
+      <a href="#contact" class="btn">Contactez-moi</a>
+    </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Photo de Abibatou Ndiaye" />
+    </div>
+  </section>
+
+  <section id="about" class="section about-section fade-in-up">
     <h2>À propos</h2>
-    <p>Curieuse, rigoureuse et toujours prête à relever de nouveaux défis, je m’intéresse aux multiples domaines de l’informatique, avec une affinité particulière pour les projets concrets et innovants. Après l’obtention de ma licence en informatique à l’Université Côte d’Azur, je m’apprête à intégrer un Master 1 en septembre 2025.
-    <br><br>Actuellement en recherche d’alternance, je souhaite mettre mes compétences au service d’une équipe dynamique tout en continuant à progresser techniquement. J’accorde une grande importance à la qualité du code, à l’apprentissage continu et à la capacité à travailler en autonomie comme en collaboration.</p>
+    <p>
+      Titulaire d’une licence en <b>Sciences Mathématiques et Informatique</b> ainsi que d’une licence en <b>Informatique</b> obtenue à Nice, je vais intégrer un Master 1 à l’Université Côte d’Azur. Curieuse, rigoureuse et passionnée par les technologies, je m’investis dans des projets concrets liés à l’<b>intelligence artificielle</b>, à la <b>cybersécurité</b> et au <b>développement logiciel</b>.<br /><br />
+
+En recherche d’une <b>alternance</b>, je souhaite rejoindre une équipe stimulante où je pourrai continuer à apprendre, progresser et contribuer activement.
+ </p>
+<section id="parcours" class="section">
+  <h2>Parcours académique</h2>
+
+  <div class="etape">
+    <h3> Master 1 Informatique</h3>
+    <p><em>Université Côte d’Azur – Campus SophiaTech</em><br>2025 – en cours</p>
+  </div>
+
+  <div class="etape">
+    <h3> Licence Informatique</h3>
+    <p><em>Université Côte d’Azur – Nice, France</em><br>2024 – 2025</p>
+  </div>
+
+  <div class="etape">
+    <h3> Licence Sciences Mathématiques et Informatique</h3>
+    <p><em>Université Sidi Mohamed Ben Abdellah – Fes, Maroc</em><br>2021 – 2024</p>
+  </div>
+
+  <div class="etape">
+    <h3>Baccalauréat Scientifique – Mention Assez Bien</h3>
+    <p><em>Sénégal</em><br>2020</p>
+  </div>
+</section>
+
+
+  <section id="skills" class="section">
+    <h2>Compétences</h2>
+    <div class="skills-list">
+      <div class="skill">
+        <h3>Programmation</h3>
+        <p>Java, C, Python, JavaScript</p>
+      </div>
+      <div class="skill">
+        <h3>Développement mobile</h3>
+        <p>Android, Firebase</p>
+      </div>
+      <div class="skill">
+        <h3>Cybersécurité</h3>
+        <p>Analyse de vulnérabilités, gestion des risques</p>
+      </div>
+      <div class="skill">
+        <h3>Outils</h3>
+        <p>Git, Docker, Linux</p>
+      </div>
+    </div>
   </section>
 
   <section id="projects" class="section">
     <h2>Projets</h2>
-    <!-- Exemples de cartes projet -->
     <div class="project-card">
       <h3>Kidsafety (Android)</h3>
-      <p>Application mobile de suivi parental : géolocalisation, verrouillage d'applications, alertes, accès aux messages et contacts, gestion multi-profils.</p>
+      <p>Application mobile de contrôle parental : géolocalisation en temps réel, verrouillage d'applications, alertes personnalisées, gestion des messages, contacts et profils multiples.</p>
     </div>
     <div class="project-card">
       <h3>2Days Game</h3>
-      <p>Jeu de stratégie au tour par tour développé en Java avec animations, interface interactive et logique métier.</p>
+      <p>Jeu de stratégie au tour par tour développé en Java : animations fluides, interface interactive et logique métier complète</p>
     </div>
     <div class="project-card">
       <h3>miniC Compiler</h3>
-      <p>Compilateur éducatif en C avec analyse lexicale, syntaxique, sémantique et génération d'AST + fichier DOT.</p>
+      <p>Compilateur éducatif en C implémentant l’analyse lexicale, syntaxique, sémantique, la construction d’AST et la génération de fichiers DOT.</p>
     </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Galerie</h2>
+    <p>Maquettes, captures d’écran et images de projets à venir...</p>
   </section>
 
   <section id="cv" class="section">
     <h2>Mon CV</h2>
-    <a href="CV_AbibatouNdiaye.pdf" download class="btn">Télécharger le CV</a>
+    <a href="./Curriculumvitae.pdf" download class="btn">Télécharger le CV</a>
   </section>
+<section id="blog" class="section">
+ <section id="parcours-action" class="section">
+  <h2>Mon parcours en action</h2>
+
+ 
+
+  <div class="etape">
+    <h3>🏫 Intervenante à la mairie de Saint-André</h3>
+    <p><strong>Depuis décembre 2024</strong></p>
+    <p>Intervention en milieu périscolaire avec l’équipe éducative. Une expérience humaine et enrichissante, mêlant pédagogie, animation et accompagnement des enfants au quotidien.</p>
+  </div>
+
+  <div class="etape">
+    <h3>🎮 Développement de 2Days Game</h3>
+    <p><strong>Janvier 2025</strong></p>
+    <p>Projet académique à Nice dans le cadre du cours de Programmation et Conception Orientée Objet. Jeu de stratégie au tour par tour en Java, avec animations, logique métier, interface utilisateur interactive.</p>
+  </div>
+
+   <div class="etape">
+    <h3>🔒 Lancement de Kidsafety</h3>
+    <p><strong>Juin 2024</strong></p>
+    <p>Projet de fin d’études réalisé à Fès : application Android de contrôle parental intégrant géolocalisation, verrouillage d'applications, alertes personnalisées, gestion multi-profils et accès aux messages. Un projet motivé par la sécurité numérique des enfants.</p>
+  </div>
+
+   <div class="etape">
+    <h3>💻 Stage à la DSI de PAMECAS</h3>
+    <p><strong>Août 2023</strong></p>
+    <p>Stage technique au sein de la Direction des Systèmes d’Information à Dakar. Participation à la maintenance des systèmes, au suivi applicatif et à l’analyse des besoins utilisateurs pour améliorer les outils internes.</p>
+  </div>
+</section>
+
+
 
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Vous pouvez me retrouver sur :<br>
-      <a href="https://github.com/abiibatouu" target="_blank">GitHub</a> | 
-      <a href="https://linkedin.com/in/abibatou" target="_blank">LinkedIn</a>
+    <p>Vous pouvez me retrouver sur :</p>
+    <p>
+      <a href="https://github.com/abiibatouu" target="_blank" rel="noopener noreferrer">GitHub</a> |
+      <a href="https://linkedin.com/in/abibatou" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </p>
-  </section>
-
+  
   <footer>
     <p>&copy; 2025 Abibatou Ndiaye - Tous droits réservés.</p>
   </footer>
