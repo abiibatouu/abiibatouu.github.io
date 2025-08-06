@@ -8,246 +8,351 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Abibatou Ndiaye</h1>
-      <ul>
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#gallery">Galerie</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+ <header>
+  <nav>
+    <h1>Abibatou Ndiaye</h1>
+    <ul>
+      <li><a href="#home" class="fr">Accueil</a><a href="#home" class="en" style="display:none;">Home</a></li>
+      <li><a href="#about" class="fr">À propos</a><a href="#about" class="en" style="display:none;">About</a></li>
+      <li><a href="#skills" class="fr">Compétences</a><a href="#skills" class="en" style="display:none;">Skills</a></li>
+      <li><a href="#projects" class="fr">Projets</a><a href="#projects" class="en" style="display:none;">Projects</a></li>
+      <li><a href="#gallery" class="fr">Galerie</a><a href="#gallery" class="en" style="display:none;">Gallery</a></li>
+      <li><a href="#cv" class="fr">CV</a><a href="#cv" class="en" style="display:none;">Resume</a></li>
+      <li><a href="#contact" class="fr">Contact</a><a href="#contact" class="en" style="display:none;">Contact</a></li>
+    </ul>
+
+    <!-- 🔁 Bouton de switch -->
+    <button id="lang-switch">EN </button>
+  </nav>
+</header>
 
   <section id="home" class="section hero">
     <div class="hero-content">
-      <h2>Bonjour, je suis Abibatou Ndiaye</h2>
-      
-      <p>Étudiante en Master 1 Informatique à l’Université Côte d’Azur</p>
-     <p>Passionnée par l’intelligence artificielle, la cybersécurité et le développement logiciel.</p>
-<p style="font-size: 0.9em; color: #888"><code>// print("Hello, world!") – tout a commencé là</code></p>
+      <h2 class="fr">Bonjour, je suis Abibatou Ndiaye</h2>
+<h2 class="en" style="display: none;">Hello, I'm Abibatou Ndiaye</h2>
 
-      <a href="#contact" class="btn">Contactez-moi</a>
+<p class="fr">Étudiante en Master 1 Informatique à l’Université Côte d’Azur</p>
+<p class="en" style="display: none;">Master’s student in Computer Science at Université Côte d’Azur</p>
+
+<p class="fr">Passionnée par la science des données, la cybersécurité et le développement logiciel.</p>
+<p class="en" style="display: none;">Passionate about data science, cybersecurity, and software development.</p>
+
+<p class="fr" style="font-size: 0.9em; color: #888">
+  <code>// print("Hello, world!") – tout a commencé là</code>
+</p>
+<p class="en" style="font-size: 0.9em; color: #888; display: none;">
+  <code>// print("Hello, world!") – it all started there</code>
+</p>
+
+<a href="#contact" class="btn fr">Contactez-moi</a>
+<a href="#contact" class="btn en" style="display: none;">Contact me</a>
+
     </div>
     <div class="hero-image">
-      <img src="./images/profile.jpg" alt="Photo de Abibatou Ndiaye" />
+      <img src="images/profile.jpg" alt="Photo de Abibatou Ndiaye" />
     </div>
   </section>
 
 
-  <section id="about" class="section about-section fade-in-up">
-    <h2>À propos</h2>
-    <p>
-      Titulaire d’une licence en <b>Sciences Mathématiques et Informatique</b> ainsi que d’une licence en <b>Informatique</b> obtenue à Nice, je vais intégrer un Master 1 à l’Université Côte d’Azur. Curieuse, rigoureuse et passionnée par les technologies, je m’investis dans des projets concrets liés à l’<b>intelligence artificielle</b>, à la <b>cybersécurité</b> et au <b>développement logiciel</b>.<br /><br />
+<section id="about" class="section about-section fade-in-up">
+  <h2 class="fr">À propos</h2>
+  <h2 class="en" style="display: none;">About</h2>
 
-En recherche d’une <b>alternance</b>, je souhaite rejoindre une équipe stimulante où je pourrai continuer à apprendre, progresser et contribuer activement.
- </p>
+  <p class="fr">
+    Titulaire d’une licence en <b>Sciences Mathématiques et Informatique</b> ainsi que d’une licence en <b>Informatique</b> obtenue à Nice, je vais intégrer un Master 1 à l’Université Côte d’Azur.
+    Curieuse, rigoureuse et passionnée par les technologies, je m’investis dans des projets concrets liés à l’<b>intelligence artificielle</b>, à la <b>cybersécurité</b> et au <b>développement logiciel</b>.<br /><br />
+    En recherche d’une <b>alternance</b>, je souhaite rejoindre une équipe stimulante où je pourrai continuer à apprendre, progresser et contribuer activement.
+  </p>
+
+  <p class="en" style="display: none;">
+    Holder of a degree in <b>Mathematical and Computer Sciences</b> as well as a degree in <b>Computer Science</b> obtained in Nice, I am about to start a Master’s in Computer Science at Université Côte d’Azur.
+    Curious, rigorous and passionate about technology, I enjoy working on hands-on projects related to <b>artificial intelligence</b>, <b>cybersecurity</b> and <b>software development</b>.<br /><br />
+    Currently looking for an <b>apprenticeship</b>, I am eager to join a dynamic team where I can learn, grow and contribute meaningfully.
+  </p>
+</section>
+
 <section id="parcours" class="section">
-  <h2>Parcours académique</h2>
+  <h2 class="fr">Parcours académique</h2>
+  <h2 class="en" style="display: none;">Academic Background</h2>
 
   <div class="etape">
-    <h3> Master 1 Informatique</h3>
+    <h3 class="fr">Master 1 Informatique</h3>
+    <h3 class="en" style="display: none;">Master 1 in Computer Science</h3>
     <p><em>Université Côte d’Azur – Campus SophiaTech</em><br>2025 – en cours</p>
   </div>
 
   <div class="etape">
-    <h3> Licence Informatique</h3>
+    <h3 class="fr">Licence Informatique</h3>
+    <h3 class="en" style="display: none;">Bachelor's in Computer Science</h3>
     <p><em>Université Côte d’Azur – Nice, France</em><br>2024 – 2025</p>
   </div>
 
   <div class="etape">
-    <h3> Licence Sciences Mathématiques et Informatique</h3>
-    <p><em>Université Sidi Mohamed Ben Abdellah – Fes, Maroc</em><br>2021 – 2024</p>
+    <h3 class="fr">Licence Sciences Mathématiques et Informatique</h3>
+    <h3 class="en" style="display: none;">Bachelor’s in Mathematical and Computer Sciences</h3>
+    <p><em>Université Sidi Mohamed Ben Abdellah – Fes, Morocco</em><br>2021 – 2024</p>
   </div>
 
   <div class="etape">
-    <h3>Baccalauréat Scientifique – Mention Assez Bien</h3>
+    <h3 class="fr">Baccalauréat Scientifique – Mention Assez Bien</h3>
+    <h3 class="en" style="display: none;">Scientific Baccalaureate – Honorable Mention</h3>
     <p><em>Sénégal</em><br>2020</p>
   </div>
 </section>
 
-
 <section id="skills" class="section">
-  <h2>Compétences</h2>
+  <h2 class="fr">Compétences</h2>
+  <h2 class="en" style="display: none;">Skills</h2>
+
   <div class="skills-list">
-
     <div class="skill">
-      <h3>Langages</h3>
-      <p>Java, Python, C, C#, OCaml, PHP, JavaScript, HTML, CSS, SQL, Bash, Excel avancé</p>
+      <h3 class="fr">Langages</h3>
+      <h3 class="en" style="display: none;">Languages</h3>
+      <p class="fr">Java, Python, C, C#, OCaml, PHP, JavaScript, HTML, CSS, SQL, Bash, Excel avancé</p>
+      <p class="en" style="display: none;">Java, Python, C, C#, OCaml, PHP, JavaScript, HTML, CSS, SQL, Bash, Advanced Excel</p>
     </div>
 
     <div class="skill">
-      <h3>Analyse de données</h3>
-      <p>Python (Pandas, NumPy), Scikit-learn, Power BI, statistiques, visualisation (Matplotlib, Seaborn)</p>
+      <h3 class="fr">Analyse de données</h3>
+      <h3 class="en" style="display: none;">Data Analysis</h3>
+      <p class="fr">Python (Pandas, NumPy), Scikit-learn, Power BI, statistiques, visualisation (Matplotlib, Seaborn)</p>
+      <p class="en" style="display: none;">Python (Pandas, NumPy), Scikit-learn, Power BI, statistics, visualization (Matplotlib, Seaborn)</p>
     </div>
 
     <div class="skill">
-      <h3>Développement mobile</h3>
-      <p>Android Studio, Firebase, API Google Maps</p>
+      <h3 class="fr">Développement mobile</h3>
+      <h3 class="en" style="display: none;">Mobile Development</h3>
+      <p class="fr">Android Studio, Firebase, API Google Maps</p>
+      <p class="en" style="display: none;">Android Studio, Firebase, Google Maps API</p>
     </div>
 
     <div class="skill">
-      <h3>Bases de données</h3>
-      <p>SQL (MySQL, PostgreSQL), NoSQL (Firebase), conception et modélisation UML</p>
+      <h3 class="fr">Bases de données</h3>
+      <h3 class="en" style="display: none;">Databases</h3>
+      <p class="fr">SQL (MySQL, PostgreSQL), NoSQL (Firebase), conception et modélisation UML</p>
+      <p class="en" style="display: none;">SQL (MySQL, PostgreSQL), NoSQL (Firebase), design and UML modeling</p>
     </div>
 
     <div class="skill">
-      <h3>Outils & Environnements</h3>
-      <p>Git, Docker, Cisco Packet Tracer, PowerApps, Canva, VirtualBox, VS Code, Linux, Windows</p>
+      <h3 class="fr">Outils & Environnements</h3>
+      <h3 class="en" style="display: none;">Tools & Environments</h3>
+      <p class="fr">Git, Docker, Cisco Packet Tracer, PowerApps, Canva, VirtualBox, VS Code, Linux, Windows</p>
+      <p class="en" style="display: none;">Git, Docker, Cisco Packet Tracer, PowerApps, Canva, VirtualBox, VS Code, Linux, Windows</p>
     </div>
 
     <div class="skill">
-      <h3>Soft Skills</h3>
-      <p>Autonomie, créativité, travail en équipe, communication</p>
+      <h3 class="fr">Soft Skills</h3>
+      <h3 class="en" style="display: none;">Soft Skills</h3>
+      <p class="fr">Autonomie, créativité, travail en équipe, communication</p>
+      <p class="en" style="display: none;">Autonomy, creativity, teamwork, communication</p>
     </div>
-
   </div>
 </section>
+<section id="projects" class="section">
+  <h2 class="fr">Projets</h2>
+  <h2 class="en" style="display: none;">Projects</h2>
 
-  <section id="projects" class="section">
-  <h2>Projets</h2>
-
+  <!-- KidSafety -->
   <div class="project-card">
-    <h3>📱 KidSafety – Application mobile Android</h3>
-    <p>
+    <h3 class="fr">📱 KidSafety – Application mobile Android</h3>
+    <h3 class="en" style="display: none;">📱 KidSafety – Android mobile app</h3>
+
+    <p class="fr">
       Projet de fin d'études réalisé en 2024 à l’Université Sidi Mohamed Ben Abdellah.<br>
       KidSafety est une application de contrôle parental permettant de :
-      <ul>
-        <li>📍 Suivre la géolocalisation en temps réel de l’enfant</li>
-        <li>🔒 Verrouiller des applications sensibles</li>
-        <li>📩 Accéder aux SMS et contacts</li>
-        <li>👥 Gérer plusieurs profils enfants/parents</li>
-      </ul>
     </p>
+    <ul class="fr">
+      <li>📍 Suivre la géolocalisation en temps réel de l’enfant</li>
+      <li>🔒 Verrouiller des applications sensibles</li>
+      <li>📩 Accéder aux SMS et contacts</li>
+      <li>👥 Gérer plusieurs profils enfants/parents</li>
+    </ul>
+
+    <p class="en" style="display: none;">
+      Final-year project developed in 2024 at Sidi Mohamed Ben Abdellah University.<br>
+      KidSafety is a parental control Android app allowing to:
+    </p>
+    <ul class="en" style="display: none;">
+      <li>📍 Track the child's real-time location</li>
+      <li>🔒 Lock sensitive applications</li>
+      <li>📩 Access SMS and contacts</li>
+      <li>👥 Manage multiple parent/child profiles</li>
+    </ul>
+
     <p>
-      🔗 <a href="https://github.com/abiibatouu/KidSafety" target="_blank">Voir le projet sur GitHub</a><br>
-      📺 <a href="https://drive.google.com/file/d/1_nWW0645gAp0Gaa-DFHbOPI_37XwZ24k/view?usp=drivesdk" target="_blank">Démo vidéo</a><br>
-      📄 <a href="./Rapport_VFinal.pdf" target="_blank">Rapport final (PDF)</a>
+      🔗 <a href="https://github.com/abiibatouu/KidSafety" target="_blank">GitHub</a><br>
+      📺 <a href="https://drive.google.com/file/d/1_nWW0645gAp0Gaa-DFHbOPI_37XwZ24k/view?usp=drivesdk" target="_blank">Démo vidéo / Video demo</a><br>
+      📄 <a href="Rapport_VFinal.pdf" target="_blank">Rapport / Report (PDF)</a>
     </p>
   </div>
 
+  <!-- 2Days Game -->
   <div class="project-card">
-    <h3>🎮 2Days Game – Jeu Java avec LibGDX</h3>
-    <p>
+    <h3 class="fr">🎮 2Days Game – Jeu Java avec LibGDX</h3>
+    <h3 class="en" style="display: none;">🎮 2Days Game – Java game with LibGDX</h3>
+
+    <p class="fr">
       Réalisé en janvier 2025 à l’Université Côte d’Azur (cours de PCOO).<br>
       Jeu 2D au tour par tour dans lequel le joueur collecte des pièces en évitant des bombes. Le jeu comprend :
-      <ul>
-        <li>🧭 Niveaux créés avec Tiled</li>
-        <li>🎨 Interface graphique fluide avec transitions</li>
-        <li>⚙️ Architecture orientée objet (MVC)</li>
-      </ul>
     </p>
+    <ul class="fr">
+      <li>🧭 Niveaux créés avec Tiled</li>
+      <li>🎨 Interface graphique fluide avec transitions</li>
+      <li>⚙ Architecture orientée objet (MVC)</li>
+    </ul>
+
+    <p class="en" style="display: none;">
+      Developed in January 2025 at Université Côte d’Azur (OOP course).<br>
+      A 2D turn-based game where the player collects coins while avoiding bombs. Features include:
+    </p>
+    <ul class="en" style="display: none;">
+      <li>🧭 Levels created with Tiled</li>
+      <li>🎨 Smooth UI with transitions</li>
+      <li>⚙ Object-Oriented architecture (MVC)</li>
+    </ul>
+
     <p>
-      🔗 <a href="https://github.com/abiibatouu/2DGames" target="_blank">Voir le projet sur GitHub</a><br>
-      📺 <a href="https://drive.google.com/file/d/1C74GYKWgRWgrFeRgJTI863rkt8aiwVLv/view?usp=drivesdk" target="_blank">Démo vidéo</a>
+      🔗 <a href="https://github.com/abiibatouu/2DGames" target="_blank">GitHub</a><br>
+      📺 <a href="https://drive.google.com/file/d/1C74GYKWgRWgrFeRgJTI863rkt8aiwVLv/view?usp=drivesdk" target="_blank">Démo vidéo / Video demo</a>
     </p>
   </div>
 
+  <!-- miniC Compiler -->
   <div class="project-card">
-    <h3>🛠 miniC Compiler – Compilateur en C</h3>
-    <p>
+    <h3 class="fr">🛠 miniC Compiler – Compilateur en C</h3>
+    <h3 class="en" style="display: none;">🛠 miniC Compiler – Educational C Compiler</h3>
+
+    <p class="fr">
       Projet académique réalisé en 2025. Ce compilateur éducatif en C inclut :
-      <ul>
-        <li>🔍 Analyse lexicale, syntaxique et sémantique</li>
-        <li>🌳 Construction automatique d’un AST</li>
-        <li>📄 Génération de fichiers DOT pour visualiser la structure</li>
-        <li>🧠 Gestion des erreurs et des portées</li>
-      </ul>
     </p>
- 
+    <ul class="fr">
+      <li>🔍 Analyse lexicale, syntaxique et sémantique</li>
+      <li>🌳 Construction automatique d’un AST</li>
+      <li>📄 Génération de fichiers DOT pour visualiser la structure</li>
+      <li>🧠 Gestion des erreurs et des portées</li>
+    </ul>
+
+    <p class="en" style="display: none;">
+      Academic project completed in 2025. This educational C compiler includes:
+    </p>
+    <ul class="en" style="display: none;">
+      <li>🔍 Lexical, syntax and semantic analysis</li>
+      <li>🌳 Automatic AST generation</li>
+      <li>📄 DOT file export for structure visualization</li>
+      <li>🧠 Error handling and scope management</li>
+    </ul>
   </div>
+
 </section>
+<section id="gallery" class="section">
+  <h2 class="fr">📸 Galerie</h2>
+  <h2 class="en" style="display:none;">📸 Gallery</h2>
 
-
-  <section id="gallery" class="section">
-  <h2>Galerie</h2>
-  <p>Un aperçu visuel de mes projets et expériences professionnelles.</p>
+  <p class="fr">Un aperçu visuel de mes projets et expériences professionnelles.</p>
+  <p class="en" style="display:none;">A visual overview of my projects and professional experiences.</p>
 
   <div class="gallery-grid">
-
     <!-- Mairie -->
     <div class="gallery-item">
-      <img src="./images/Perisco.jpg" alt="Intervention périscolaire – mairie" />
-      <figcaption>Activité pédagogique – Mairie de Saint-André-de-la-Roche</figcaption>
+      <img src="images/Perisco.jpg" alt="Intervention périscolaire – mairie" />
+      <figcaption class="fr">Activité pédagogique – Mairie de Saint-André-de-la-Roche</figcaption>
+      <figcaption class="en" style="display:none;">Educational activity – Saint-André-de-la-Roche City Hall</figcaption>
     </div>
-
 
     <!-- Kidsafety -->
     <div class="gallery-item">
-      <img src="./images/KidSafety (2).png" alt="Maquette Kidsafety" />
-      <figcaption>Interface de l’application Kidsafety</figcaption>
+      <img src="images/KidSafety (2).png" alt="Maquette Kidsafety" />
+      <figcaption class="fr">Interface de l’application Kidsafety</figcaption>
+      <figcaption class="en" style="display:none;">Kidsafety application interface</figcaption>
     </div>
 
-
     <!-- 2Days Game -->
-   
     <div class="gallery-item">
-      <img src="./images/2daysgame.png" alt="Version finale du jeu 2Days" />
-      <figcaption>Version finale avec moteur LibGDX</figcaption>
+      <img src="images/2daysgame.png" alt="Version finale du jeu 2Days" />
+      <figcaption class="fr">Version finale avec moteur LibGDX</figcaption>
+      <figcaption class="en" style="display:none;">Final version using LibGDX engine</figcaption>
     </div>
 
     <!-- miniC -->
     <div class="gallery-item">
-      <img src="./images/miniC.png" alt="AST généré" />
-      <figcaption>Exemple de graphes générés – miniC Compiler</figcaption>
+      <img src="images/miniC.png" alt="AST généré" />
+      <figcaption class="fr">Exemple de graphes générés – miniC Compiler</figcaption>
+      <figcaption class="en" style="display:none;">Example of generated graphs – miniC Compiler</figcaption>
     </div>
- 
-
   </div>
 </section>
 
+<section id="cv" class="section">
+  <h2 class="fr">Mon CV</h2>
+  <h2 class="en" style="display:none;">My Resume</h2>
 
-  <section id="cv" class="section">
-    <h2>Mon CV</h2>
-    <a href="./Curriculumvitae.pdf" download class="btn">Télécharger le CV</a>
-  </section>
-<section id="blog" class="section">
- <section id="parcours-action" class="section">
-  <h2>Mon parcours en action</h2>
+  <a href="./Curriculumvitae.pdf" download class="btn fr">Télécharger le CV</a>
+  <a href="./Curriculumvitae.pdf" download class="btn en" style="display:none;">Download Resume</a>
+</section>
 
- 
-
-  <div class="etape">
-    <h3>🏫 Intervenante à la mairie de Saint-André</h3>
-    <p><strong>Depuis décembre 2024</strong></p>
-    <p>Intervention en milieu périscolaire avec l’équipe éducative. Une expérience humaine et enrichissante, mêlant pédagogie, animation et accompagnement des enfants au quotidien.</p>
-  </div>
+<section id="parcours-action" class="section">
+  <h2 class="fr">Mon parcours en action</h2>
+  <h2 class="en" style="display:none;">My Journey in Action</h2>
 
   <div class="etape">
-    <h3>🎮 Développement de 2Days Game</h3>
-    <p><strong>Janvier 2025</strong></p>
-    <p>Projet académique à Nice dans le cadre du cours de Programmation et Conception Orientée Objet. Jeu de stratégie au tour par tour en Java, avec animations, logique métier, interface utilisateur interactive.</p>
+    <h3>🏫 <span class="fr">Intervenante à la mairie de Saint-André</span><span class="en" style="display:none;">After-school educator – Saint-André City Hall</span></h3>
+    <p><strong class="fr">Depuis décembre 2024</strong><strong class="en" style="display:none;">Since December 2024</strong></p>
+    <p class="fr">Intervention en milieu périscolaire avec l’équipe éducative. Une expérience humaine et enrichissante, mêlant pédagogie, animation et accompagnement des enfants au quotidien.</p>
+    <p class="en" style="display:none;">Worked in after-school programs with the educational team. A meaningful experience combining teaching, fun, and daily support for children.</p>
   </div>
 
-   <div class="etape">
-    <h3>🔒 Lancement de Kidsafety</h3>
-    <p><strong>Juin 2024</strong></p>
-    <p>Projet de fin d’études réalisé à Fès : application Android de contrôle parental intégrant géolocalisation, verrouillage d'applications, alertes personnalisées, gestion multi-profils et accès aux messages. Un projet motivé par la sécurité numérique des enfants.</p>
+  <div class="etape">
+    <h3>🎮 <span class="fr">Développement de 2Days Game</span><span class="en" style="display:none;">Development of 2Days Game</span></h3>
+    <p><strong class="fr">Janvier 2025</strong><strong class="en" style="display:none;">January 2025</strong></p>
+    <p class="fr">Projet académique à Nice dans le cadre du cours de Programmation et Conception Orientée Objet. Jeu de stratégie au tour par tour en Java, avec animations, logique métier, interface utilisateur interactive.</p>
+    <p class="en" style="display:none;">Academic project in Nice for the Object-Oriented Programming course. A turn-based strategy game built in Java with animations, game logic, and interactive interface.</p>
   </div>
 
-   <div class="etape">
-    <h3>💻 Stage à la DSI de PAMECAS</h3>
-    <p><strong>Août 2023</strong></p>
-    <p>Stage technique au sein de la Direction des Systèmes d’Information à Dakar. Participation à la maintenance des systèmes, au suivi applicatif et à l’analyse des besoins utilisateurs pour améliorer les outils internes.</p>
+  <div class="etape">
+    <h3>🔒 <span class="fr">Lancement de Kidsafety</span><span class="en" style="display:none;">Launch of Kidsafety</span></h3>
+    <p><strong class="fr">Juin 2024</strong><strong class="en" style="display:none;">June 2024</strong></p>
+    <p class="fr">Projet de fin d’études réalisé à Fès : application Android de contrôle parental intégrant géolocalisation, verrouillage d'applications, alertes personnalisées, gestion multi-profils et accès aux messages. Un projet motivé par la sécurité numérique des enfants.</p>
+    <p class="en" style="display:none;">Final-year project in Fez: Android parental control app featuring geolocation, app locking, alerts, multi-profile management, and SMS access. Motivated by children's digital safety.</p>
+  </div>
+
+  <div class="etape">
+    <h3>💻 <span class="fr">Stage à la DSI de PAMECAS</span><span class="en" style="display:none;">Internship at PAMECAS IT Department</span></h3>
+    <p><strong class="fr">Août 2023</strong><strong class="en" style="display:none;">August 2023</strong></p>
+    <p class="fr">Stage technique au sein de la Direction des Systèmes d’Information à Dakar. Participation à la maintenance des systèmes, au suivi applicatif et à l’analyse des besoins utilisateurs pour améliorer les outils internes.</p>
+    <p class="en" style="display:none;">Technical internship at the IT department in Dakar. Involved in system maintenance, application monitoring, and user needs analysis to improve internal tools.</p>
   </div>
 </section>
 
+<section id="contact" class="section">
+  <h2 class="fr">Contact</h2>
+  <h2 class="en" style="display:none;">Contact</h2>
 
+  <p class="fr">Vous pouvez me retrouver sur :</p>
+  <p class="en" style="display:none;">You can find me on:</p>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Vous pouvez me retrouver sur :</p>
-    <p>
-      <a href="https://github.com/abiibatouu" target="_blank" rel="noopener noreferrer">GitHub</a> |
-      <a href="https://www.linkedin.com/in/abibatou-ndiaye/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </p>
-  
-  <footer>
-    <p>&copy; 2025 Abibatou Ndiaye - Tous droits réservés.</p>
-  </footer>
+  <p>
+    <a href="https://github.com/abiibatouu" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/abibatou-ndiaye/" target="_blank">LinkedIn</a>
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Abibatou Ndiaye - Tous droits réservés.</p>
+</footer>
+<script>
+  const switchBtn = document.getElementById('lang-switch');
+  let currentLang = 'fr';
+
+  switchBtn.addEventListener('click', () => {
+    currentLang = currentLang === 'fr' ? 'en' : 'fr';
+    document.querySelectorAll('.fr').forEach(el => {
+      el.style.display = currentLang === 'fr' ? '' : 'none';
+    });
+    document.querySelectorAll('.en').forEach(el => {
+      el.style.display = currentLang === 'en' ? '' : 'none';
+    });
+    switchBtn.textContent = currentLang === 'fr' ? 'EN 🇬🇧' : 'FR 🇫🇷';
+  });
+</script>
 </body>
 </html>
