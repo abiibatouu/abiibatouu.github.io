@@ -232,8 +232,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Glassmorphism container */
-.section, header, footer, nav ul li a, .skill, .project-card {
+.section, footer, nav ul li a, .skill, .project-card {
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 15px;
@@ -242,6 +241,7 @@ a:hover {
   -webkit-backdrop-filter: blur(10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 a {
   color: #dbb665;
@@ -256,11 +256,14 @@ a:hover {
 
 header {
   padding: 20px 0;
-  position: sticky;
-  top: 0;
+  position: sticky; 
   z-index: 1000;
   margin-bottom: 20px;
+  background-color: white; /* opaque */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* optionnel */
+  border-radius: 15px;
 }
+
 
 nav {
   max-width: 1100px;
@@ -688,3 +691,4 @@ form#contact-form button:hover {
   font-size: 0.95em;
   color: #555;
 }
+
