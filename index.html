@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abibatou Ndiaye - Portfolio</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -26,14 +26,18 @@
   <section id="home" class="section hero">
     <div class="hero-content">
       <h2>Bonjour, je suis Abibatou Ndiaye</h2>
+      
       <p>Étudiante en Master 1 Informatique à l’Université Côte d’Azur</p>
-      <p>Passionnée par la science des données, la cybersécurité et le développement logiciel</p>
+     <p>Passionnée par l’intelligence artificielle, la cybersécurité et le développement logiciel.</p>
+<p style="font-size: 0.9em; color: #888"><code>// print("Hello, world!") – tout a commencé là</code></p>
+
       <a href="#contact" class="btn">Contactez-moi</a>
     </div>
     <div class="hero-image">
-      <img src="profile.jpg" alt="Photo de Abibatou Ndiaye" />
+      <img src="images/profile.jpg" alt="Photo de Abibatou Ndiaye" />
     </div>
   </section>
+
 
   <section id="about" class="section about-section fade-in-up">
     <h2>À propos</h2>
@@ -87,28 +91,102 @@ En recherche d’une <b>alternance</b>, je souhaite rejoindre une équipe stimul
         <p>Git, Docker, Linux</p>
       </div>
     </div>
-  </section>
+  </section><section id="projects" class="section">
+  <h2>Projets</h2>
 
-  <section id="projects" class="section">
-    <h2>Projets</h2>
-    <div class="project-card">
-      <h3>Kidsafety (Android)</h3>
-      <p>Application mobile de contrôle parental : géolocalisation en temps réel, verrouillage d'applications, alertes personnalisées, gestion des messages, contacts et profils multiples.</p>
-    </div>
-    <div class="project-card">
-      <h3>2Days Game</h3>
-      <p>Jeu de stratégie au tour par tour développé en Java : animations fluides, interface interactive et logique métier complète</p>
-    </div>
-    <div class="project-card">
-      <h3>miniC Compiler</h3>
-      <p>Compilateur éducatif en C implémentant l’analyse lexicale, syntaxique, sémantique, la construction d’AST et la génération de fichiers DOT.</p>
-    </div>
-  </section>
+  <div class="project-card">
+    <h3>📱 KidSafety – Application mobile Android</h3>
+    <p>
+      Projet de fin d'études réalisé en 2024 à l’Université Sidi Mohamed Ben Abdellah.<br>
+      KidSafety est une application de contrôle parental permettant de :
+      <ul>
+        <li>📍 Suivre la géolocalisation en temps réel de l’enfant</li>
+        <li>🔒 Verrouiller des applications sensibles</li>
+        <li>📩 Accéder aux SMS et contacts</li>
+        <li>👥 Gérer plusieurs profils enfants/parents</li>
+      </ul>
+    </p>
+    <p>
+      🔗 <a href="https://github.com/abiibatouu/KidSafety" target="_blank">Voir le projet sur GitHub</a><br>
+      📺 <a href="https://drive.google.com/file/d/1_nWW0645gAp0Gaa-DFHbOPI_37XwZ24k/view?usp=drivesdk" target="_blank">Démo vidéo</a><br>
+      📄 <a href="Rapport_VFinal.pdf" target="_blank">Rapport final (PDF)</a>
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>🎮 2Days Game – Jeu Java avec LibGDX</h3>
+    <p>
+      Réalisé en janvier 2025 à l’Université Côte d’Azur (cours de PCOO).<br>
+      Jeu 2D au tour par tour dans lequel le joueur collecte des pièces en évitant des bombes. Le jeu comprend :
+      <ul>
+        <li>🧭 Niveaux créés avec Tiled</li>
+        <li>🎨 Interface graphique fluide avec transitions</li>
+        <li>⚙️ Architecture orientée objet (MVC)</li>
+      </ul>
+    </p>
+    <p>
+      🔗 <a href="https://github.com/abiibatouu/2DGames" target="_blank">Voir le projet sur GitHub</a><br>
+      📺 <a href="https://drive.google.com/file/d/1C74GYKWgRWgrFeRgJTI863rkt8aiwVLv/view?usp=drivesdk" target="_blank">Démo vidéo</a>
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>🛠 miniC Compiler – Compilateur en C</h3>
+    <p>
+      Projet académique réalisé en 2025. Ce compilateur éducatif en C inclut :
+      <ul>
+        <li>🔍 Analyse lexicale, syntaxique et sémantique</li>
+        <li>🌳 Construction automatique d’un AST</li>
+        <li>📄 Génération de fichiers DOT pour visualiser la structure</li>
+        <li>🧠 Gestion des erreurs et des portées</li>
+      </ul>
+    </p>
+ 
+  </div>
+</section>
 
   <section id="gallery" class="section">
     <h2>Galerie</h2>
     <p>Maquettes, captures d’écran et images de projets à venir...</p>
   </section>
+
+  <section id="gallery" class="section">
+  <h2>📸 Galerie</h2>
+  <p>Un aperçu visuel de mes projets et expériences professionnelles.</p>
+
+  <div class="gallery-grid">
+
+    <!-- Mairie -->
+    <div class="gallery-item">
+      <img src="images/Perisco.jpg" alt="Intervention périscolaire – mairie" />
+      <figcaption>Activité pédagogique – Mairie de Saint-André-de-la-Roche</figcaption>
+    </div>
+
+
+    <!-- Kidsafety -->
+    <div class="gallery-item">
+      <img src="images/KidSafety (2).png" alt="Maquette Kidsafety" />
+      <figcaption>Interface de l’application Kidsafety</figcaption>
+    </div>
+
+
+    <!-- 2Days Game -->
+   
+    <div class="gallery-item">
+      <img src="images/2daysgame.png" alt="Version finale du jeu 2Days" />
+      <figcaption>Version finale avec moteur LibGDX</figcaption>
+    </div>
+
+    <!-- miniC -->
+    <div class="gallery-item">
+      <img src="images/miniC.png" alt="AST généré" />
+      <figcaption>Exemple de graphes générés – miniC Compiler</figcaption>
+    </div>
+ 
+
+  </div>
+</section>
+
 
   <section id="cv" class="section">
     <h2>Mon CV</h2>
@@ -152,7 +230,7 @@ En recherche d’une <b>alternance</b>, je souhaite rejoindre une équipe stimul
     <p>Vous pouvez me retrouver sur :</p>
     <p>
       <a href="https://github.com/abiibatouu" target="_blank" rel="noopener noreferrer">GitHub</a> |
-      <a href="https://linkedin.com/in/abibatou" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/abibatou-ndiaye/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </p>
   
   <footer>
