@@ -391,14 +391,15 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 1.2rem;
     }
+    .proj-grid.master-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
     @media (max-width: 900px) {
       .proj-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-    }
-    @media (max-width: 600px) {
-      .proj-grid {
-        grid-template-columns: 1fr;
+      .proj-grid.master-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
     .proj-card {
@@ -848,7 +849,7 @@
     <div class="proj-group">
       <p class="proj-group-title fr">Master Sciences &amp; Ingénierie des Données — Aix-Marseille Université · 2025–2026</p>
       <p class="proj-group-title en" style="display:none">Master Data Science &amp; Engineering — Aix-Marseille University · 2025–2026</p>
-      <div class="proj-grid">
+      <div class="proj-grid master-grid">
 
         <div class="proj-card fi fi-d1">
           <span class="proj-year">Génie Logiciel · 2026</span>
