@@ -388,33 +388,13 @@
     }
     .proj-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.2rem;
-      width: 100%;
-    }
-    .proj-grid.master-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media (max-width: 900px) {
-      .proj-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .proj-grid.master-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 600px) {
-      .proj-grid {
-        grid-template-columns: 1fr;
-      }
-      .proj-grid.master-grid {
-        grid-template-columns: 1fr;
-      }
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 1.5rem;
     }
     .proj-card {
       background: var(--cream);
       border: 1px solid var(--border);
-      padding: 1.4rem;
+      padding: 1.8rem;
       border-radius: 2px;
       display: flex;
       flex-direction: column;
@@ -444,10 +424,10 @@
       font-size: 0.87rem;
       color: var(--ink-mid);
       flex: 1;
-      margin-bottom: 1rem;
+      margin-bottom: 1.4rem;
       line-height: 1.75;
     }
-    .proj-tech { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.9rem; }
+    .proj-tech { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1.3rem; }
     .proj-tech span {
       font-size: 0.71rem;
       font-weight: 500;
@@ -642,7 +622,7 @@
       visualization and artificial intelligence.
     </p>
 
-    <span class="hero-badge fr"> &nbsp;·&nbsp; Alternance sept. 2026 (12 mois)</span>
+    <span class="hero-badge fr">Stage mai 2026 &nbsp;·&nbsp; Alternance sept. 2026 (12 mois)</span>
     <span class="hero-badge en" style="display:none">Internship May 2026 &nbsp;·&nbsp; Work-study Sept. 2026 (12 months)</span>
 
     <div class="hero-actions">
@@ -706,7 +686,7 @@
         <div class="info-card">
           <div class="ic-label fr">Disponibilité</div>
           <div class="ic-label en" style="display:none">Availability</div>
-          <div class="ic-value fr">Alternance <strong>sept. 2026</strong> (12 mois)</div>
+          <div class="ic-value fr">Stage <strong>mai 2026</strong><br>Alternance <strong>sept. 2026</strong> (12 mois)</div>
           <div class="ic-value en" style="display:none">Internship <strong>May 2026</strong><br>Work-study <strong>Sept. 2026</strong> (12 months)</div>
         </div>
         <div class="info-card">
@@ -858,7 +838,7 @@
     <div class="proj-group">
       <p class="proj-group-title fr">Master Sciences &amp; Ingénierie des Données — Aix-Marseille Université · 2025–2026</p>
       <p class="proj-group-title en" style="display:none">Master Data Science &amp; Engineering — Aix-Marseille University · 2025–2026</p>
-      <div class="proj-grid master-grid">
+      <div class="proj-grid">
 
         <div class="proj-card fi fi-d1">
           <span class="proj-year">Génie Logiciel · 2026</span>
@@ -947,6 +927,9 @@
               <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
               GitHub
             </a>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -1131,7 +1114,7 @@
           <div>
             <p class="cd-label fr">Disponibilité</p>
             <p class="cd-label en" style="display:none">Availability</p>
-            <p class="cd-val fr"> Alternance sept. 2026 (12 mois)</p>
+            <p class="cd-val fr">Stage mai 2026 · Alternance sept. 2026 (12 mois)</p>
             <p class="cd-val en" style="display:none">Internship May 2026 · Work-study Sept. 2026 (12 months)</p>
           </div>
         </div>
