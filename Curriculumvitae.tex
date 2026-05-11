@@ -1,9 +1,12 @@
 % ============================================================
-%  Abibatou Ndiaye — CV (1 page)
+%  Abibatou Ndiaye — CV (1 page, palette portfolio)
 %  Compilation : pdflatex sur Overleaf
 % ============================================================
 
 \documentclass[10pt,a4paper]{article}
+
+% --- Police 10.5pt globale ---
+\usepackage[fontsize=10.5pt]{fontsize}
 
 % --- Encoding & langue ---
 \usepackage[utf8]{inputenc}
@@ -12,43 +15,45 @@
 \usepackage{lmodern}
 \usepackage{microtype}
 
-% --- Layout serré pour tenir sur 1 page ---
-\usepackage[a4paper, top=1cm, bottom=1cm, left=1.4cm, right=1.4cm]{geometry}
+% --- Layout ---
+\usepackage[a4paper, top=1.1cm, bottom=1.1cm, left=1.5cm, right=1.5cm]{geometry}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \pagestyle{empty}
 
-% --- Couleurs ---
+% --- Couleurs (palette portfolio : crème / or / encre) ---
 \usepackage[dvipsnames]{xcolor}
-\definecolor{accent}{HTML}{1F3864}
-\definecolor{accentlight}{HTML}{2E5A9C}
-\definecolor{tagbg}{HTML}{F0F4FA}
-\definecolor{taghibg}{HTML}{D6E4F5}
-\definecolor{textmid}{HTML}{333333}
-\definecolor{textlight}{HTML}{666666}
+\definecolor{accent}{HTML}{A07830}      % gold-deep — sections, rules, accents
+\definecolor{accentlight}{HTML}{C9A84C} % gold — tag highlight, project tech line
+\definecolor{inkdark}{HTML}{1E1A14}     % ink — barre objectif
+\definecolor{textmid}{HTML}{4A3F30}     % ink-mid
+\definecolor{textlight}{HTML}{8A7A65}   % ink-light
+\definecolor{tagbg}{HTML}{F2E6C8}       % cream-dark — fond tag standard
+\definecolor{taghibg}{HTML}{C9A84C}     % gold — fond tag highlight
+\definecolor{creamlight}{HTML}{FAF3E0}  % cream — texte sur barre sombre
 
 % --- Outils graphiques ---
 \usepackage{tikz}
 \usepackage{enumitem}
-\setlist[itemize]{leftmargin=12pt, topsep=1pt, itemsep=0pt, parsep=0pt,
+\setlist[itemize]{leftmargin=12pt, topsep=2pt, itemsep=1pt, parsep=0pt,
                   label={\textcolor{accent}{\textbf{--}}}}
 
 % --- Icônes ---
 \usepackage{fontawesome5}
 
-% --- Sections compactes ---
+% --- Sections ---
 \usepackage{titlesec}
 \titleformat{\section}
-  {\color{accent}\normalsize\bfseries}
+  {\color{accent}\large\bfseries}
   {}
   {0pt}
   {}
-  [\vspace{0pt}{\color{accent}\titlerule[0.4pt]}]
-\titlespacing*{\section}{0pt}{6pt}{3pt}
+  [\vspace{1pt}{\color{accent}\titlerule[0.5pt]}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
 
 % --- Liens ---
 \usepackage{hyperref}
-\hypersetup{colorlinks=true, urlcolor=accentlight, linkcolor=accent}
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
 
 % --- Tableaux ---
 \usepackage{array}
@@ -58,30 +63,30 @@
 \newcommand{\skill}[1]{%
   \tikz[baseline=(x.base)]{%
     \node[anchor=base, fill=tagbg, rounded corners=2pt,
-          inner xsep=3pt, inner ysep=1.5pt, text=textmid] (x) {\footnotesize #1};%
+          inner xsep=4pt, inner ysep=2pt, text=textmid] (x) {\small #1};%
   }%
 }
 \newcommand{\skillhi}[1]{%
   \tikz[baseline=(x.base)]{%
     \node[anchor=base, fill=taghibg, rounded corners=2pt,
-          inner xsep=3pt, inner ysep=1.5pt, text=accent] (x) {\footnotesize\bfseries #1};%
+          inner xsep=4pt, inner ysep=2pt, text=inkdark] (x) {\small\bfseries #1};%
   }%
 }
 
 \newcommand{\cventry}[4]{%
   \noindent
   \begin{tabularx}{\linewidth}{@{}X r@{}}
-    \textbf{#1} & {\footnotesize\color{textlight} #3} \\[0pt]
-    \textit{\small #2} & {\footnotesize\color{textlight} #4} \\
+    \textbf{#1} & {\small\color{textlight} #3} \\[1pt]
+    \textit{\small #2} & {\small\color{textlight} #4} \\
   \end{tabularx}\par\vspace{1pt}%
 }
 
 \newcommand{\cvproject}[3]{%
   \noindent
   \begin{tabularx}{\linewidth}{@{}X r@{}}
-    \textbf{#1} & {\footnotesize\color{textlight} #2} \\
+    \textbf{#1} & {\small\color{textlight} #2} \\
   \end{tabularx}\\[-1pt]%
-  {\footnotesize\itshape\color{accentlight} #3}\par%
+  {\small\itshape\color{accentlight} #3}\par%
 }
 
 % ============================================================
@@ -89,21 +94,21 @@
 
 % ===== HEADER =====
 \begin{center}
-{\fontsize{26}{30}\selectfont\bfseries Abibatou Ndiaye}\\[1pt]
-{\small\itshape Master Sciences \& Ingénierie des Données — Aix-Marseille Université}
+{\fontsize{28}{32}\selectfont\bfseries\color{inkdark} Abibatou Ndiaye}\\[2pt]
+{\itshape\color{textmid} Master Sciences \& Ingénierie des Données — Aix-Marseille Université}
 \end{center}
-\vspace{2pt}
+\vspace{3pt}
 
-\noindent\colorbox{accent}{%
+\noindent\colorbox{inkdark}{%
   \parbox{\dimexpr\textwidth-2\fboxsep}{%
-    \centering\color{white}\bfseries\footnotesize
+    \centering\color{creamlight}\bfseries\small
     RECHERCHE D'UNE ALTERNANCE DATA ANALYST / DATA ENGINEER — SEPTEMBRE 2026 (12 mois)%
   }%
 }
-\vspace{3pt}
+\vspace{4pt}
 
 \begin{center}
-\footnotesize
+\small
 \faPhone\ +33\,7\,61\,80\,75\,52 \quad{\color{accent}\textbar}\quad
 \faEnvelope\ \href{mailto:abibatou.ndiaye001@gmail.com}{abibatou.ndiaye001@gmail.com} \quad{\color{accent}\textbar}\quad
 \faLinkedin\ \href{https://linkedin.com/in/abibatou-ndiaye}{linkedin.com/in/abibatou-ndiaye} \quad{\color{accent}\textbar}\quad
@@ -113,7 +118,7 @@
 
 % ===== PROFIL =====
 \section*{Profil}
-\small Étudiante en M1 SID, profil hybride à la croisée de l'\textbf{analyse} et de l'\textbf{ingénierie des données}. Pratique concrète des pipelines automatisés, des LLM et des dashboards interactifs. Rigoureuse, autonome, à l'aise dans des environnements techniques exigeants.
+Étudiante en M1 SID, profil hybride à la croisée de l'\textbf{analyse} et de l'\textbf{ingénierie des données}. Pratique concrète des pipelines automatisés, des LLM et des dashboards interactifs. Rigoureuse, autonome, à l'aise dans des environnements techniques exigeants.
 
 % ===== FORMATION =====
 \section*{Formation}
@@ -124,12 +129,12 @@
 % ===== COMPÉTENCES =====
 \section*{Compétences techniques}
 \noindent
-\begin{tabularx}{\linewidth}{@{}>{\bfseries\footnotesize}p{3.4cm}@{}X@{}}
-Data \& Analyse           & \skillhi{Python} \skillhi{Pandas} \skillhi{NumPy} \skill{Scikit-learn} \skill{Statistiques} \skill{Excel avancé} \\[3pt]
-Bases de données          & \skillhi{SQL} \skillhi{PostgreSQL} \skill{MySQL} \skill{MongoDB} \skill{Firebase} \skill{Modélisation MCD/MLD/UML} \\[3pt]
-Pipelines \& Data Eng.\   & \skillhi{ETL} \skillhi{LLM / Prompt Engineering} \skill{Playwright} \skill{API REST} \skill{Web scraping} \\[3pt]
-Visualisation \& BI       & \skillhi{Power BI} \skillhi{Streamlit} \skill{Matplotlib} \skill{Seaborn} \\[3pt]
-DevOps \& Outils          & \skillhi{Git} \skillhi{Docker} \skill{docker-compose} \skill{Linux} \skill{VS Code} \\[3pt]
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\small}p{3.4cm}@{}X@{}}
+Data \& Analyse           & \skillhi{Python} \skillhi{Pandas} \skillhi{NumPy} \skill{Scikit-learn} \skill{Statistiques} \skill{Excel avancé} \\[4pt]
+Bases de données          & \skillhi{SQL} \skillhi{PostgreSQL} \skill{MySQL} \skill{MongoDB} \skill{Firebase} \skill{Modélisation MCD/MLD/UML} \\[4pt]
+Pipelines \& Data Eng.\   & \skillhi{ETL} \skillhi{LLM / Prompt Engineering} \skill{Playwright} \skill{API REST} \skill{Web scraping} \\[4pt]
+Visualisation \& BI       & \skillhi{Power BI} \skillhi{Streamlit} \skill{Matplotlib} \skill{Seaborn} \\[4pt]
+DevOps \& Outils          & \skillhi{Git} \skillhi{Docker} \skill{docker-compose} \skill{Linux} \skill{VS Code} \\[4pt]
 Langages                  & \skill{Java} \skill{JavaScript} \skill{HTML/CSS} \skill{C} \skill{C\#} \skill{PHP} \skill{Bash} \\
 \end{tabularx}
 
@@ -137,14 +142,14 @@ Langages                  & \skill{Java} \skill{JavaScript} \skill{HTML/CSS} \sk
 \section*{Expériences professionnelles}
 \cventry{Stage Data \& Informatique}{PAMECAS — Institution de microfinance}{Août — Sept. 2023}{Dakar, Sénégal}
 \vspace{-2pt}
-\begin{itemize}\small
+\begin{itemize}
   \item Analyse de bases internes pour le suivi d'\textbf{indicateurs de performance} et la \textbf{détection d'anomalies financières}.
   \item Monitoring des infrastructures et rédaction de \textbf{rapports d'analyse} pour la Direction des Systèmes d'Information.
 \end{itemize}
-\vspace{2pt}
+\vspace{3pt}
 \cventry{Intervenante périscolaire — Ateliers Numérique}{Mairie de Saint-André-de-la-Roche}{Déc. 2024 — Juin 2025}{Saint-André-de-la-Roche, France}
 \vspace{-2pt}
-\begin{itemize}\small
+\begin{itemize}
   \item Animation d'ateliers d'initiation à la \textbf{programmation} et à la pensée logique pour des enfants.
 \end{itemize}
 
@@ -153,15 +158,15 @@ Langages                  & \skill{Java} \skill{JavaScript} \skill{HTML/CSS} \sk
 
 \cvproject{TechPulse — Observatoire de l'emploi tech $\times$ IA}{TER · Master SID · 2026}{Python · PostgreSQL · LLM · Streamlit · Docker · Playwright}
 \vspace{-2pt}
-\begin{itemize}\small
+\begin{itemize}
   \item Pipeline d'ingestion automatisé : \textbf{API France Travail} + scraping Welcome to the Jungle (Playwright). \textbf{Extraction LLM} structurée (compétences, séniorité, salaires).
   \item \textbf{Taxonomie PostgreSQL} et \textbf{dashboard Streamlit} dockerisé. Encadré par un Data Platform Manager (NAOS).
 \end{itemize}
-\vspace{2pt}
+\vspace{3pt}
 
 \cvproject{LogWatch — Monitoring \& détection d'anomalies}{Master SID · 2025}{MongoDB · NoSQL · Node.js · Anomaly Detection}
 \vspace{-2pt}
-\begin{itemize}\small
+\begin{itemize}
   \item Architecture \emph{instance $\rightarrow$ logs $\rightarrow$ anomalies} : collecte et analyse de logs applicatifs.
   \item \textbf{Détection automatique} de comportements anormaux et tableau de bord de supervision.
 \end{itemize}
@@ -169,10 +174,10 @@ Langages                  & \skill{Java} \skill{JavaScript} \skill{HTML/CSS} \sk
 % ===== LANGUES + CENTRES D'INTÉRÊT =====
 \section*{Langues \& centres d'intérêt}
 \noindent
-\begin{tabularx}{\linewidth}{@{}>{\bfseries\footnotesize}p{3.4cm}@{}X@{}}
-Langues          & \footnotesize \textbf{Français} — Maternelle \quad{\color{accent}\textbar}\quad \textbf{Wolof} — Maternelle \quad{\color{accent}\textbar}\quad \textbf{Anglais} — B2 (professionnel) \\[3pt]
-Veille \& open source & \footnotesize Certifications IA \& Data (Cisco NetAcad, Coursera, OpenClassrooms). Projets sur \href{https://github.com/abiibatouu}{github.com/abiibatouu}. \\[3pt]
-Création visuelle & \footnotesize Photographie, montage vidéo, design graphique (Canva). \\
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\small}p{3.4cm}@{}X@{}}
+Langues               & \small \textbf{Français} — Maternelle \quad{\color{accent}\textbar}\quad \textbf{Wolof} — Maternelle \quad{\color{accent}\textbar}\quad \textbf{Anglais} — B2 (professionnel) \\[4pt]
+Veille \& open source & \small Certifications IA \& Data (Cisco NetAcad, Coursera, OpenClassrooms). Projets sur \href{https://github.com/abiibatouu}{github.com/abiibatouu}. \\[4pt]
+Création visuelle     & \small Photographie, montage vidéo, design graphique (Canva). \\
 \end{tabularx}
 
 \end{document}
